@@ -1,0 +1,52 @@
+export const ResourceType = [
+    {id:'SMS', title: 'SMS'},
+    {id:'IVR', title: 'IVR'},
+    {id:'USSD', title:'USSD'},
+    {id:'ALNUM', title:'Альфанумерические номера'},
+    {id:'BILL', title: 'Услуги абон. билинга'}
+];
+export const ALL= 'all';
+export const HIDE = 'hide';
+export const VISIBLE = 'visible';
+
+export const  NumberParamType = {
+    resourceType : {id : 'resourceType' ,
+                    title: 'Тип ресурса' ,
+                    visible: ALL},
+    activeDate :    {id : 'activeDate',
+                     title: 'Активные на дату',
+                     visible: ALL},
+    number :        {id : 'number',
+                     title: 'Номер',
+                     visible: ALL},
+    dateFrom :        {id : 'dateFrom',
+        title: 'Дата начала действия номера',
+        visible: HIDE},
+    dateTill :        {id : 'dateTill',
+        title: 'Дата окончания действия номера',
+        visible: HIDE},
+    provider :        {id : 'provider',
+        title: 'Контент-провайдер',
+        visible: HIDE},
+     brand:        {id : 'brand',
+        title: 'Бренд',
+        visible: HIDE},
+    category :        {id : 'category',
+        title: 'Категория номера',
+        visible: HIDE},
+    bussinestype :        {id : 'bussinestype',
+        title: 'Тип бизнеса',
+        visible: HIDE},
+     oncePay:        {id : 'oncePay',
+        title: 'Единовременный платеж',
+        visible: HIDE},
+    fee :        {id : 'fee',
+        title: 'Абонплата',
+        visible: HIDE},
+     minReward:        {id : 'minReward',
+        title: 'Мин. вознаграждение',
+        visible: HIDE},
+    discount :        {id : 'discount',
+        title: 'Скидка',
+        visible: HIDE},
+};
